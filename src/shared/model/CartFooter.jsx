@@ -3,9 +3,9 @@ import { DetailedButton } from "./DetailedButton";
 import { CartButton } from "./CartButton";
 import { useLocation } from "react-router-dom";
 import { RemoveButton } from "./RemoveButton";
-export const CartFooter = ({ item }) => {
-  const location = useLocation();
 
+export const CartFooter = ({ item }) => { 
+  const location = useLocation();
   const cartButton = location.pathname === "/cart";
   return (
     <div>
