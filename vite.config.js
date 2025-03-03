@@ -4,13 +4,16 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/<store-market>/",
+
   build: {
     outDir: 'dist',
   },
+  base: '/<store-market>/', 
+
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./src"), 
+      
     },
   },
 });
