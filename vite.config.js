@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      external: ["antd-mobile"], // Добавьте antd-mobile в external
+      external: [], // Добавьте antd-mobile в external
     },
   },
   resolve: {
