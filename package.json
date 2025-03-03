@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Skalette1.github.io/online-store",
+  "homepage": "https://<ТВОЙ_GITHUB_ЮЗЕРНЕЙМ>.github.io/<НАЗВАНИЕ_РЕПОЗИТОРИЯ>/", 
   "name": "store",
   "private": true,
   "version": "0.0.0",
@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write ."
@@ -14,8 +16,9 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.0",
     "antd": "^5.24.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "antd-mobile": "^5.38.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.2.0",
     "redux": "^5.0.1",

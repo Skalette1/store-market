@@ -23,6 +23,11 @@ export const DetailedPage = ({ item }) => {
   const handleAddToCart = () => {
     dispatch(addToCart(item));
   };
+  
+  if (!item) {
+    return <h1 style={{ textAlign: "center", color: "red" }}>Товар не найден</h1>;
+  }
+
 
   return (
     <div>

@@ -10,10 +10,11 @@ export const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
 
   const extractPrice = (priceString) => {
+    if (!priceString) return 0; // Если priceString отсутствует, вернуть 0
     const numericValue = priceString.replace(/[^0-9.]/g, "");
-    return parseFloat(numericValue);
+    return parseFloat(numericValue) || 0; // Если parseFloat вернул NaN, то вернуть 0
   };
-
+  
   return (
     <div>
       <BackOnMAin />
