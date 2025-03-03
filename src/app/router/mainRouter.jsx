@@ -74,4 +74,8 @@ export const router = createHashRouter([
     path: "detail",
     element: <AssemblyDetail />,
   },
+  {
+    path: '*',
+    element: <NotFoundPage />,
+  }
 ]);

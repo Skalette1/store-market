@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/<store-market>/",
+  base: "/",
   build: {
     outDir: 'dist',
     rollupOptions: {
