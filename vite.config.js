@@ -7,6 +7,9 @@ export default defineConfig({
   base: "/<store-market>/",
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      external: ["antd-mobile"], // Добавьте antd-mobile в external
+    },
   },
   resolve: {
     alias: {
