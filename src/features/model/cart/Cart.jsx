@@ -10,6 +10,9 @@ export const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
 
   const extractPrice = (priceString) => {
+    if(!priceString || typeof priceString !== 'string' ) {
+      return 0
+    }
     const numericValue = priceString.replace(/[^0-9.]/g, "");
     return parseFloat(numericValue);
   };

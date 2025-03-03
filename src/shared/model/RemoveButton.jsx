@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { removeFromCart } from "../../features/model/reducers/cartCounterReducer";
+import { remove } from "../../features/model/reducers/cartReducer";
+
 export const RemoveButton = ({ item }) => {
   const dispatch = useDispatch();
   const removeFromCart = () => {

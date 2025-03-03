@@ -4,7 +4,7 @@ import productVisibleReducer from "@/features/model/reducers/productVisibleReduc
 import eatVisibleReducer from "@/features/model/reducers/eatVisibleReducer.js";
 import izbaVisibleReducer from "@/features/model/reducers/izbarVisibleReducer.js";
 import cartReducer from "../features/model/reducers/cartReducer.js";
-import cartCounterReducer from "../features/model/reducers/cartCounterReducer.js";
+import cartCounterReducer from "../features/model/reducers/cartReducer.js";
 import searchSlice from "../features/model/reducers/searchReducer.js";
 const store = configureStore({
   reducer: {
